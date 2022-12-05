@@ -5,7 +5,6 @@ import Data.List
 import Data.List.Split
 import Data.Char
 
-
 -- Part 1
 getContainedPairs :: [String] -> Int -> Int
 getContainedPairs [] pairs = pairs
@@ -24,8 +23,6 @@ hasContained pair =
     pair2first = read ((splitOn "-" secondPair)!!0) :: Int
     pair2second = read ((splitOn "-" secondPair)!!1) :: Int
     
-
-
 main1 :: IO ()
 main1 = do
   i <- readFile "day4/day4_input.txt"
@@ -50,8 +47,6 @@ hasOverlap pair =
     pair2first = read ((splitOn "-" secondPair)!!0) :: Int
     pair2second = read ((splitOn "-" secondPair)!!1) :: Int
     
-
-
 main2 :: IO ()
 main2 = do
   i <- readFile "day4/day4_input.txt"
